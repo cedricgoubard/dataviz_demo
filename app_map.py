@@ -5,9 +5,7 @@ import pandas as pd
 
 from plotly import graph_objs as go
 
-external_stylesheets = ['style.css']
-
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__)
 app.title = 'Claims'
 
 df = pd.read_csv("data.csv")
